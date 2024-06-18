@@ -172,7 +172,20 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_HOST_USER = 'vsai66542@gmail.com'
-EMAIL_HOST_PASSWORD = 'qvykexktlbvbdbxc'
+EMAIL_HOST_PASSWORD = '' # generate in gmail account(App password)
 EMAIL_USE_TLS = True
 EMAIL_USE_SSL = False
+"""
+
+# S3 bucket configuration 
+"""
+AWS_ACCESS_KEY_ID = 'AWS_ACCESS_KEY_ID '
+AWS_SECRET_ACCESS_KEY = 'AWS_SECRET_ACCESS_KEY'
+AWS_STORAGE_BUCKET_NAME = 'AWS_STORAGE_BUCKET_NAME'
+AWS_S3_SIGNATURE_NAME = 's3v4',
+AWS_S3_REGION_NAME = 'AWS_S3_REGION_NAME'
+AWS_S3_FILE_OVERWRITE = False
+AWS_DEFAULT_ACL =  None
+AWS_S3_VERITY = True
+DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 """
