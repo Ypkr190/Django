@@ -40,6 +40,7 @@ def registration_view(request):
             
             data['token'] = token
             
+            
             # Email Notification after registration
             """"
             subject = "Thanking for registration to our application"
